@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BookShelf App</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><span>{</span>rakBuku<span>}</span></h1>
+    </header>
+
+    <div id="successPopUp" class="popup-alert success-popup">
+      <h3>Perubahan Berhasil!</h3>
+    </div>
+
+    <div id="deletedPopUp" class="popup-alert deleted-popup">
+      <h3>Data Dihapus</h3>
+    </div>
+
+    <main>
+      <div class="add-book-container container">
+        <h1>Tambahkan Data Buku</h1>
+        <form id="form">
+          <div class="label">
+            <label for="bookTitle">JUDUL BUKU</label>
+          </div>
+          <input type="text" name="book-title" id="bookTitle" required />
+
+          <div class="label">
+            <label for="bookAuthor">PENULIS BUKU</label>
+          </div>
+          <input type="text" name="book-author" id="bookAuthor" required />
+
+          <div class="label">
+            <label for="bookYear">TAHUN</label>
+          </div>
+          <input
+            type="number"
+            min="1000"
+            name="book-year"
+            id="bookYear"
+            required
+          />
+
+          <input type="submit" value="Simpan" />
+        </form>
+      </div>
+
+      <div class="search-book-container container">
+        <h1>Cari Buku</h1>
+        <div class="search-container">
+          <div class="search-icon-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="search" placeholder="Nama/Penulis Buku" id="search" />
+        </div>
+      </div>
+
+      <div class="unfinished-book-container container">
+        <h1>Belum Selesai Dibaca</h1>
+        <div id="unfinished"></div>
+      </div>
+
+      <div class="finished-book-container container">
+        <h1>Sudah Selesai Dibaca</h1>
+        <div id="finished"></div>
+      </div>
+    </main>
+
+    <div class="popup-container" id="popUp">
+      <div class="popup">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <h2>Awas!</h2>
+        <p>
+          Apakah kamu yakin ingin menghapus data ini? Data yang terhapus tidak
+          bisa dikembalikan lho!
+        </p>
+        <div class="popup-action-buttons">
+          <button class="continue-del-btn" id="continueDeletion">
+            Lanjutkan
+          </button>
+          <button class="cancel-del-btn" id="cancelDeletion">Batalkan</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="copyright">
+        <p>Leonardo Denavito ©2023 - Dicoding DOM & Web Storage Submission</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f2ead6d816.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

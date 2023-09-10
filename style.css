@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #35353a;
+}
+
+header {
+  width: 100%;
+  background-color: #1f1f1f;
+  display: flex;
+}
+
+header .logo {
+  color: white;
+  margin: 1.25rem;
+}
+
+header .logo span {
+  color: rgb(0, 255, 85);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .container {
+  margin: 1.5rem 10vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.1);
+}
+.container h1 {
+  color: #1f1f1f;
+  margin: 1rem;
+  text-align: center;
+}
+
+.add-book-container form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-book-container .label {
+  width: fit-content;
+  background-color: white;
+  margin: 0 2rem -0.7rem 4rem;
+  z-index: 10;
+}
+
+.add-book-container .label label {
+  padding: 0 0.5rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+
+.add-book-container form input {
+  margin: 0 2rem 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  outline: none;
+  border: 2.5px solid gray;
+}
+
+.add-book-container form input[type="submit"] {
+  width: 40%;
+  border: none;
+  align-self: center;
+  color: rgb(0, 255, 85);
+  background-color: #1f1f1f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-book-container form input[type="submit"]:hover {
+  scale: 98%;
+  color: #1f1f1f;
+  background-color: rgb(0, 255, 85);
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.search-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  margin: 0 0 2rem 2rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container i{
+  margin: 1rem;
+  font-size: 24px;
+  color: white;
+}
+
+.search-container input[type="search"] {
+  width: 100%;
+  margin: 0 2rem 2rem 0;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  border: 2.5px solid gray;
+}
+
+.unfinished-book-container,
+.finished-book-container {
+  padding-bottom: 1rem;
+}
+
+.book-list {
+  width: 76vw;
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-list div {
+  margin: 0.25rem 1rem;
+}
+
+.readed-button {
+  font-size: clamp(32px, 3vw, 800px);
+  color: #1f1f1f;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.readed-button:hover {
+  color: rgb(0, 255, 85);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.action-buttons button {
+  font-size: clamp(32px, 3vw, 800px);
+  color: #1f1f1f;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.unreaded-button:hover {
+  color: rgb(63, 49, 193);
+}
+
+.permanent-delete-button:hover {
+  color: rgb(255, 37, 37);
+}
+
+.popup-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+  opacity: 0%;
+  z-index: -99;
+}
+
+.popup {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.popup i {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  color: rgb(255, 37, 37);
+}
+
+.popup p {
+  max-width: 250px;
+}
+
+.popup-action-buttons button {
+  font-size: 20px;
+  margin: 1.5rem 1rem 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-action-buttons button:hover {
+  scale: 98%;
+}
+
+.continue-del-btn {
+  background-color: rgb(212, 212, 212);
+  color: gray;
+}
+
+.cancel-del-btn {
+  color: white;
+  background-color: rgb(255, 37, 37);
+  font-weight: bold;
+}
+
+.popup-alert {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 100px;
+  top: 0px;
+  transition: 0.5s;
+  opacity: 0;
+  user-select: none;
+  z-index: 100;
+}
+
+.success-popup {
+  background-color: green;
+}
+
+.deleted-popup {
+  background-color: red;
+}
+
+.popup-alert h3 {
+  align-self: flex-end;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  padding: 0rem 0 2rem;
+  justify-content: center;
+}
+
+.copyright {
+  margin: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
