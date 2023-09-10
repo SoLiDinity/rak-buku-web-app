@@ -14,7 +14,7 @@ Repositori ini berisi proyek mengenai aplikasi web rak buku dimana pengguna dapa
 ### 💻 Instalasi
 Anda dapat menyimpan repositori ini pada perangkat anda secara lokal dengan mendownload atau dengan menjalankan perintah ```git clone <repository_url>``` pada terminal sebagai berikut.
 ```
-git clone https://github.com/SoLiDinity/rak-buku-web-app/edit/main/README.md
+git clone https://github.com/SoLiDinity/rak-buku-web-app/
 ```
 
 <br>
@@ -31,7 +31,7 @@ This repository contains a project for a bookshelf web application where users c
 ### 💻 Installation
 You can store this repository on your device locally by downloading it or by running the command ```git clone <repository_url>``` in the terminal as follows.
 ```
-git clone https://github.com/SoLiDinity/rak-buku-web-app/edit/main/README.md
+git clone https://github.com/SoLiDinity/rak-buku-web-app/
 ```
 
 <br>
