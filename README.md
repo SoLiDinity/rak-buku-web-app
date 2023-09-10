@@ -33,3 +33,11 @@ You can store this repository on your device locally by downloading it or by run
 ```
 git clone https://github.com/SoLiDinity/rak-buku-web-app/edit/main/README.md
 ```
+
+<br>
+
+## 🖥️ Preview
+![Screenshot (1710)](https://github.com/SoLiDinity/rak-buku-web-app/assets/127974449/20e30520-7b45-4b0c-baa7-5cc702645f6b)
+![Screenshot (1712)](https://github.com/SoLiDinity/rak-buku-web-app/assets/127974449/33985a2b-2de9-415c-9211-75e9953da543)
+
+
